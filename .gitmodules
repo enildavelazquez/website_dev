@@ -1,3 +1,7 @@
 [submodule "enildavelazquezblog/themes/hugo-theme-console"]
 	path = enildavelazquezblog/themes/hugo-theme-console
 	url = https://github.com/mrmierzejewski/hugo-theme-console.git
+[submodule "enildavelazquezblog/public"]
+	path = enildavelazquezblog/public
+	url = https://github.com/enildavelazquez/enildavelazquez.github.io.git
+	branch = main
