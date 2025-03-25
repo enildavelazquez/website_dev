@@ -1,0 +1,6 @@
+baseurl = "https://enildavelazquez.github.io/"
+title = "console-demo"
+theme = "hugo-theme-console"
+languageCode = "en-us"
+
+
