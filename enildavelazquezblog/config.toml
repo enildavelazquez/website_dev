@@ -36,6 +36,3 @@ languageCode = "en-us"
 
 [permalinks]
 papers = "/papers/"
-
-[server]
-disableFastRender = false
