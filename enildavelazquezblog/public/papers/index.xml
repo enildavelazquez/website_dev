@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Papers on Main</title>
+    <link>https://enildavelazquez.github.io/papers/</link>
+    <description>Recent content in Papers on Main</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://enildavelazquez.github.io/papers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assessing The Effect of Stimuli Complexity in Web-Based Visual Foraging</title>
+      <link>https://enildavelazquez.github.io/papers/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://enildavelazquez.github.io/papers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Detection of AI-Generated Images: A Mixed Methods Study On Age-Related Differences</title>
+      <link>https://enildavelazquez.github.io/papers/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://enildavelazquez.github.io/papers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>One Game, Multiple Platforms: Enhancing Usability and Accessibility in Dead by Daylight</title>
+      <link>https://enildavelazquez.github.io/papers/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://enildavelazquez.github.io/papers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Understanding Aggressive Driving: The Role of Personality and Individual Differences</title>
+      <link>https://enildavelazquez.github.io/papers/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://enildavelazquez.github.io/papers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Understanding Aggressive Driving Behavior: The Role of Personality and Individual Differences</title>
+      <link>https://enildavelazquez.github.io/papers/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://enildavelazquez.github.io/papers/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

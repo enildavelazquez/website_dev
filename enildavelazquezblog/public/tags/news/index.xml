@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Main</title>
+    <link>https://enildavelazquez.github.io/tags/news/</link>
+    <description>Recent content in News on Main</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://enildavelazquez.github.io/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Feature in UCF Today!</title>
+      <link>https://enildavelazquez.github.io/news/featured_ucf_today/</link>
+      <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://enildavelazquez.github.io/news/featured_ucf_today/</guid>
+      <description>&lt;p&gt;I am excited to share that I have been featured in a piece from &lt;em&gt;UCF Today&lt;/em&gt;, where I discuss my recent SMART Scholarship award and it&amp;rsquo;s impacts on my current research trajectory. The article highlights this exciting scholarship opportunity and the work I am doing at the University of Central Florida.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.ucf.edu/news/10-ucf-students-selected-for-2024-dod-smart-scholarships/&#34;&gt;📰 Read the full article here&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
