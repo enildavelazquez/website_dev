@@ -1,6 +1,38 @@
 baseurl = "https://enildavelazquez.github.io/"
-title = "console-demo"
-theme = "hugo-theme-console"
+title = "Main"
+theme = ["hugo-theme-console"]
 languageCode = "en-us"
 
+[params]
+  titleCutting = true
+  animateStyle = "animated zoomIn fast"
 
+  [[params.navlinks]]
+  name = "experience/"
+  url = "experience/"
+
+  [[params.navlinks]]
+  name = "papers/"
+  url = "papers/"
+
+  [[params.navlinks]]
+  name = "talks/"
+  url = "talks/"
+
+  [[params.navlinks]]
+  name = "news/"
+  url = "news/"
+
+  [[params.navlinks]]
+  name = "projects/"
+  url = "projects/"
+
+  [[params.navlinks]]
+  name = "get in touch/"
+  url = "contact/"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[permalinks]
+papers = "/papers/"

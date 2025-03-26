@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <main>
+    <h1>{{ .Title }}</h1>
+    <br>
+    <p>Updates on my recent projects and media features. Feel free to browse through the blog posts or check out the latest features in various news outlets.</p>
+
+
+    <hr>
+
+    {{ range .Pages }}
+      <div class="news-item">
+        <strong>{{ .Title }}</strong><br>
+        <em>{{ .Date.Format "January 2, 2006" }}</em><br>
+        <p>{{ .Summary }}</p>
+      </div>
+
+      <!-- Section break (horizontal line) -->
+      <hr>
+    {{ end }}
+  </main>
+{{ end }}

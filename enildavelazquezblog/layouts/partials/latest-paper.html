@@ -1,0 +1,25 @@
+{{ $papers := where site.RegularPages "Section" "papers" }}
+{{ $sorted := sort $papers "Params.date" "desc" }}
+{{ $latest := index $sorted 0 }}
+
+<div class="latest-paper">
+  <strong>{{ $latest.Title }}</strong><br/>
+
+  {{ with $latest.Params.authors }}
+    <em>{{ . }}</em><br/>
+  {{ end }}
+
+  {{ with $latest.Params.journal }}
+    {{ . }}, {{ ($latest.Params.date | time).Format "2006" }}<br/>
+  {{ else }}
+    {{ ($latest.Params.date | time).Format "2006" }}<br/>
+  {{ end }}
+
+  {{ with $latest.Params.doi }}
+    <a href="{{ . }}" target="_blank">🔗 DOI</a>
+  {{ end }}
+
+  {{ with $latest.Params.pdf }}
+    | <a href="{{ . }}" target="_blank">📄 PDF</a>
+  {{ end }}
+</div>

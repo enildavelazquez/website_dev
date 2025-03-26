@@ -1,0 +1,11 @@
+{{ $latestNews := first 1 (where .Site.RegularPages "Section" "news") }}
+{{ if $latestNews }}
+  {{ $newsPage := index $latestNews 0 }} <!-- Get the first page from the list -->
+  <div class="latest-news">
+    <strong><a href="{{ $newsPage.Permalink }}">{{ $newsPage.Title }}</a></strong><br>
+    <em>Date: {{ $newsPage.Date.Format "January 2, 2006" }}</em><br>
+    <p>{{ $newsPage.Summary }}</p>
+  </div>
+{{ else }}
+  <p>No recent news available.</p>
+{{ end }}

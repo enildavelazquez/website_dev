@@ -1,0 +1,13 @@
+{{ $section := .Get "section" }}
+{{ $items := (where site.RegularPages "Section" $section) | sort "Date" "desc" | first 1 }}
+{{ range $items }}
+<div class="recent-item">
+  <strong>{{ .Title }}</strong><br />
+  {{ if .Params.doi }}
+    <a href="{{ .Params.doi }}" target="_blank">DOI</a>
+  {{ else }}
+    {{ .Date.Format "January 2, 2006" }}<br />
+    {{ .Summary }}
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <main>
+    <h1>{{ .Title }}</h1>
+
+    <!-- Get papers and filter out those without a date -->
+    {{ $papers := where .Site.Pages "Section" "papers" }}
+    {{ $papers = where $papers ".Params.date" "ne" nil }} <!-- Exclude papers with no date -->
+    {{ $papers = sort $papers ".Params.date" "desc" }}
+
+    <hr>
+
+    {{ range $index, $page := $papers }}
+      <div class="paper-card" style="margin-bottom: 1.5rem;">
+        <strong>{{ $page.Title }}</strong><br />
+
+        {{ with $page.Params.authors }}
+          <em>{{ . }}</em><br />
+        {{ end }}
+
+        <!-- Only render the date if it exists -->
+        {{ with $page.Params.date }}
+          <p>{{ ($page.Params.date | time).Format "2006" }}</p>
+        {{ end }}
+
+        {{ with $page.Params.journal }}
+          <em>{{ . }}</em><br />
+        {{ end }}
+
+        {{ with $page.Params.doi }}
+          <a href="{{ . }}" target="_blank">🔗 DOI</a>
+        {{ end }}
+
+        {{ with $page.Params.pdf }}
+          | <a href="{{ . }}" target="_blank">📄 PDF</a>
+        {{ end }}
+      </div>
+      <hr>
+    {{ end }}
+  </main>
+{{ end }}

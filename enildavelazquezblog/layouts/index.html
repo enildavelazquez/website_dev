@@ -1,0 +1,52 @@
+{{ define "main" }}
+  <main>
+    <style>
+      .about-wrapper {
+        overflow: auto;
+        margin-bottom: 2rem;
+      }
+
+      .about-img {
+        float: left;
+        width: 160px;
+        margin: 0 1.5rem 1rem 0;
+      }
+
+      .latest-paper {
+        margin-top: 2rem;
+      }
+    </style>
+
+    <br>
+
+    <div class="about-wrapper">
+      <img src="/images/velazquez_headshot_circle.png" class="about-img" alt="Headshot" />
+      <br>
+      <h1> Hi there, I'm Enilda!</h1>
+      <p>
+        I’m a PhD student in the human factors and cognitive psychology program at the University of Central Florida, specializing in clutter perception, task performance, and attention in complex environments. 
+        I’m currently conducting research on how visual natural clutter impacts task effectiveness in operational tasks. I’m also a DoD SMART Scholar.
+      </p>
+    </div>
+    
+    <hr>
+
+    <div class="columns">
+      <div class="section-block">
+        <h2>Research Interests</h2>
+        <ul>
+          <p>👁️ Visual clutter perception</p>
+          <p>🧠 Performance in complex visual tasks</p>
+          <p>🤖 Human-Machine teaming and decision making</p>
+        </ul>
+      </div>
+    
+    <hr>
+    <h2>Latest Publication</h2>
+    {{ partial "latest-paper.html" . }}
+    <hr>
+    <h2> Latest News</h2>
+    {{ partial "latest-news.html" . }}
+  </main>
+{{ end }}
+
